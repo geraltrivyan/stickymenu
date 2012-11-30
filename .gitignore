@@ -1,0 +1,10 @@
+### Linux Ignores
+.*
+!.gitignore
+*~
+
+### Vim Ignores
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
