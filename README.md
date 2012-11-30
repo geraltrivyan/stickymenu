@@ -11,7 +11,7 @@ Upon request, I can add these features!
 
 ## Quick start
 
-Clone the git repo - `git clone git@github.com:gneatgeek/stickymenu.git` - or [download the current tag](https://github.com/gneatgeek/stickymenu/archive/v1-stable.zip)
+Clone the git repo - `git clone git@github.com:gneatgeek/stickymenu.git` - or [download the current tag](https://github.com/gneatgeek/stickymenu/archive/v1.0.1-stable.zip)
 
 ## Demo and Example Usage
 To see this plugin in action, checkout [gneatgeek.github.com](http://gneatgeek.github.com)
