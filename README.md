@@ -7,7 +7,7 @@ I put together this plugin because I couldn't quickly find a small plugin to do 
 
 Currently, it only realistically supports one menu since it has the positioning hard coded within the plugin. It also does not have a function to unbind/reset. This was a choice on my part to keep it as small as possible.
 
-Upon request, I can add these featuress!
+Upon request, I can add these features!
 
 ## Quick start
 
