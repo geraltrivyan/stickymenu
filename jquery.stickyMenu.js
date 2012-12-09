@@ -1,5 +1,5 @@
 /**
- * Sticky Menu is a super lightweight jQuery plugin to make a menu sticky/dockable/pinable.
+ * Sticky Menu is a super small jQuery plugin to make a menu sticky/dockable/pinable.
  * @author Rory Hardy [GneatGeek]
  * @param {Object} $ - jQuery
  * @param {Object} window
@@ -19,7 +19,7 @@
 		var start = menu.offset().top;                      // Initial position of your menu
 		var id    = 'scroll.stickymenu-' + menu.attr('id'); // We need to namespace all functions.
 
-		if (!cname)// Default CSS class to sticky if the user didn't specify their own
+		if (!cname) // Default CSS class to sticky if the user didn't specify their own
 			var cname = "sticky";
 
 		$(window).bind(id, function() {
