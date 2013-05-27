@@ -1,5 +1,6 @@
 /**
  * Sticky Menu is a super small jQuery plugin to make a menu sticky/dockable/pinable.
+ * 
  * @author Rory Hardy [GneatGeek]
  * @param {Object} $ - jQuery
  * @param {Object} window
@@ -19,10 +20,10 @@
         start = menu.offset().top;
 
     if ( !cname )
-      cname = "sticky";
+      cname = 'sticky';
 
     $(window).bind('scroll.stickymenu-' + menu.attr('id'), function() {
-      if (pinned) {
+      if ( pinned ) {
         if ( $(this).scrollTop() <= start ) {
           menu.toggleClass(cname);
           pinned = false;
