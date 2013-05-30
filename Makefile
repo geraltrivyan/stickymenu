@@ -11,4 +11,3 @@ build:
 	@uglifyjs -nc -o jquery.stickyMenu.min.js jquery.stickyMenu.js
 
 .PHONY: build clean compile
-
