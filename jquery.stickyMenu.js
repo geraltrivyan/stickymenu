@@ -20,24 +20,27 @@
     $.fn.stickyMenu = function(cname,toggleelem, togglevisible) {
         var pinned,
             menu  = this;
-        if ( !toggleelem )
-            var start = toggleelem.offset().top;
-        else
-            var start = this.offset().top;
+//        if ( !toggleelem )
+        var start = toggleelem.offset().top;
+//        else
+//            var start = this.offset().top;
 
         if ( !cname )
             cname = 'sticky';
 
         $(window).bind('scroll.stickymenu-' + menu.attr('id'), function() {
+
+            //console.log($(this).scrollTop(), start);
+
             if ( pinned ) {
-                if ( $(this).scrollTop() <= start ) {
+                if ( $(this).scrollTop() <= start || $(this).scrollTop() == start) {
                     menu.toggleClass(cname);
-                    if ( togglevisible ) menu.toggle();
+                    if ( togglevisible ) menu.hide();
                     pinned = false;
                 }
             } else if ( $(this).scrollTop() > start ) {
                 menu.toggleClass(cname);
-                if (togglevisible) menu.toggle();
+                if (togglevisible) menu.show();
                 pinned = true;
             }
         });
