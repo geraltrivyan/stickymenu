@@ -34,9 +34,12 @@
 
             if ( pinned ) {
                 if ( $(this).scrollTop() <= start || $(this).scrollTop() == start) {
-                    menu.toggleClass(cname);
-                    if ( togglevisible ) menu.fadeOut();
+
+                    if ( togglevisible ) menu.fadeOut( function () {
+                            menu.toggleClass(cname);
+                        });
                     pinned = false;
+
                 }
             } else if ( $(this).scrollTop() > start ) {
                 menu.toggleClass(cname);
