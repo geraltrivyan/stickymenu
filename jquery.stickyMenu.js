@@ -35,12 +35,12 @@
             if ( pinned ) {
                 if ( $(this).scrollTop() <= start || $(this).scrollTop() == start) {
                     menu.toggleClass(cname);
-                    if ( togglevisible ) menu.hide();
+                    if ( togglevisible ) menu.fadeOut();
                     pinned = false;
                 }
             } else if ( $(this).scrollTop() > start ) {
                 menu.toggleClass(cname);
-                if (togglevisible) menu.show();
+                if (togglevisible) menu.fadeIn();
                 pinned = true;
             }
         });
